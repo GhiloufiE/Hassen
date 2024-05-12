@@ -23,7 +23,6 @@ function App() {
   ];
   
 
-
   useEffect(() => {
     // Set dummy log data when component mounts
     setLogs(dummyLogs);
