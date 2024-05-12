@@ -63,11 +63,11 @@
 
 .logs-box {
   width: 100%;
-  max-width: 800px;
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
 }
+
 
 .log {
   display: flex;
@@ -102,4 +102,37 @@
 .log p {
   margin: 0;
   flex: 1;
+}
+.log-controls {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input-container {
+  position: relative; /* Position relative for absolute positioning */
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #5bc0de;
+  box-shadow: 0 0 5px rgba(91, 192, 222, 0.5);
+}
+
+.search-input::placeholder {
+  color: #aaa;
 }
